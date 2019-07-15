@@ -22,4 +22,4 @@ Ganache runs on localhost:7545
 
 ### Testing
 #### Smart Contract
-Run `truffle test` to execute the unit tests.
+Run `truffle test` to execute the Smart Contract's unit tests.
