@@ -18,6 +18,7 @@ File sharing component of AgriSCM system, using Ethereum and NodeJS.
 `npm run dev`:
 
 REST API server will listen at localhost:3000
+
 Ganache runs on localhost:7545
 
 ### Testing
