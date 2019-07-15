@@ -1,0 +1,27 @@
+{
+  "name": "agriscm-file-sharing",
+  "version": "1.0.0",
+  "description": "File sharing functionalities over Blockchain",
+  "repository": {},
+  "main": "src/js/app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "node src/js/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TIC-Blockchain",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.18.0",
+    "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "truffle-contract": "^4.0.24",
+    "web3": "^1.0.0-beta.55"
+  }
+}
