@@ -94,7 +94,7 @@ module.exports = {
     let fsInstance;
     FileSharing.deployed().then((instance) => {
       fsInstance = instance;
-      return fsInstance.getPermission(ipfsHash, { from: App.account });
+      return fsInstance.getPermission.call(ipfsHash, { from: App.account });
     }).then((key) => {
       callback(key);
     }).catch((err) => {
@@ -108,7 +108,7 @@ module.exports = {
     let fsInstance;
     FileSharing.deployed().then((instance) => {
       fsInstance = instance;
-      return fsInstance.verifyHash(batchId, hashToBeVerified, { from: App.account });
+      return fsInstance.verifyHash.call(batchId, hashToBeVerified, { from: App.account });
     }).then((success) => {
       callback(success);
     }).catch((err) => {
