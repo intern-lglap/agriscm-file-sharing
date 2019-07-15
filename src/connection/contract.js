@@ -9,7 +9,7 @@ const FileSharing = TruffleContract(artifact);
 
 module.exports = {
   async init() {
-    return this.initWeb3();
+    await this.initWeb3();
   },
 
   async initWeb3() {
@@ -30,6 +30,7 @@ module.exports = {
     }
 
     // Load account data
+    // TODO: Test if loading account data here works
     // eslint-disable-next-line no-undef
     web3.eth.getCoinbase((err, acc) => {
       if (err === null) {
@@ -37,7 +38,7 @@ module.exports = {
       }
     });
 
-    return App.initContract();
+    await App.initContract();
   },
 
   initContract() {
