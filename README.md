@@ -5,6 +5,7 @@ File sharing component of AgriSCM system, using Ethereum and NodeJS.
 ## Prerequisites
 1. Install/rollback to NodeJS 8.15.0 andusing [NVM](https://github.com/creationix/nvm)
 2. From project root folder install all the dependencies: `npm install --unsafe-perm=true --allow-root`
+3. Install [Truffle](https://www.trufflesuite.com/)
 
 ### Install NodeJS 8.15.0
 1. `nvm use`

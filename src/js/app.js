@@ -11,7 +11,7 @@ async function start() {
   const app = Express();
   app.set('port', process.env.PORT || 3000);
   app.use('/', Express.static(path.join(__dirname, '../public')));
-
+  app.use('/', Express.static(path.join(__dirname, '../../build/contracts')));
   // Use router to handle /api routes
   await handleRoutes(app);
 

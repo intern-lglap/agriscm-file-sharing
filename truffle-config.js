@@ -7,8 +7,5 @@ module.exports = {
       port: 7545,
       network_id: '*', // Match any network id
     },
-    develop: {
-      port: 8545,
-    },
   },
 };
